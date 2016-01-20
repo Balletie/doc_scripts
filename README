@@ -16,3 +16,6 @@ Files:
   of the parent repository.-
 - example.ini: example template config file for
   '../doclink_config.ini' in the parent repository.
+- install_git.sh: Used to install a Git version with
+  the git-worktree builtin. Originally meant for use
+  with Travis CI, which has an old version of Git.
