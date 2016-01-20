@@ -1,0 +1,18 @@
+doc_scripts
+
+Scripts for building and deploying docs in Pillar format
+to GitHub pages. This is meant to be used as submodule
+within a repository including a 'doclink_config.ini' file.
+
+Files:
+
+- doclink.py: Creates links to source code within Pillar
+  files. See './doclink.py --help' for usage and info.
+- build.sh: Build the Pillar build product with links
+  linked to source code in the `master` branch of the
+  parent repository. Reads from '../doclink_config.ini'
+  the options for './doclink.py'.
+- deploy.sh: Uses build.sh and deploys to the `gh-pages`
+  of the parent repository.-
+- example.ini: example template config file for
+  '../doclink_config.ini' in the parent repository.
