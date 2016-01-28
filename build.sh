@@ -29,7 +29,7 @@ git worktree prune -v
 
 ./pillar export
 
-[ -f pillarPostExport.sh ] && [ type lualatex >/dev/null 2>&1 ] && bash pillarPostExport.sh
+[ -f pillarPostExport.sh ] && type lualatex >/dev/null && bash pillarPostExport.sh
 
 if [ -f gh-pages/html-chap/getting-started.html ]; then
   pushd gh-pages/html-chap
